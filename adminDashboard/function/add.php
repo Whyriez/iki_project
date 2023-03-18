@@ -12,7 +12,6 @@ if (isset($_POST['tambahKamar'])) {
     $jumlahOrang = $_POST['jumlahOrang'];
     $deskripsi = $_POST['deskripsi'];
     $gambar = $_FILES['gambar']['name'];
-    // $gambar = $_POST['gambar'];
     $harga = $_POST['harga'];
 
 

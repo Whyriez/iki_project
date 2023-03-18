@@ -1,8 +1,8 @@
 <!-- ======= Sidebar ======= -->
 <?php
-session_start();
-$page = basename($_SERVER['PHP_SELF']);
 require('../function.php');
+$page = basename($_SERVER['PHP_SELF']);
+
 
 $role = $_SESSION['role'];
 

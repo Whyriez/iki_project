@@ -1,5 +1,9 @@
-<?php include("../tmp/headerAuth.php");
+<?php
+$title = "Register";
+include("../tmp/headerAuth.php");
 require('../function.php');
+
+
 
 ?>
 <main>

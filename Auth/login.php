@@ -1,5 +1,7 @@
 <?php
 session_start();
+$title = "Login";
+
 include("../tmp/headerAuth.php");
 
 require('../function.php');

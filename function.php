@@ -52,8 +52,18 @@ if (isset($_POST['register'])) {
 
 if (isset($_GET['hapus'])) {
     $id = $_GET['hapus'];
+    $queryShow = "SELECT * FROM data_kamar WHERE id = '$id'";
+    $sqlShow = mysqli_query($koneksi, $queryShow);
+    $result = mysqli_fetch_assoc($sqlShow);
+
+    unlink("Assets/gambarKamar/" . $result['gambar_kamar']);
+
     $query = "DELETE FROM data_kamar WHERE id = '$id'";
     $sql = mysqli_query($koneksi, $query);
+
+
+
+
 
     if ($sql) header("Location: adminDashboard/kamar.php");
 }
